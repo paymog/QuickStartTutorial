@@ -24,6 +24,8 @@
 		C384D36D179E084F006E4875 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C384D345179E084F006E4875 /* Foundation.framework */; };
 		C384D375179E084F006E4875 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C384D373179E084F006E4875 /* InfoPlist.strings */; };
 		C384D378179E084F006E4875 /* Quick_Start_TutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C384D377179E084F006E4875 /* Quick_Start_TutorialTests.m */; };
+		C384D382179E08EB006E4875 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C384D381179E08EB006E4875 /* AddressBook.framework */; };
+		C384D384179E08F1006E4875 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C384D383179E08F1006E4875 /* AddressBookUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		C384D374179E084F006E4875 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C384D376179E084F006E4875 /* Quick_Start_TutorialTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quick_Start_TutorialTests.h; sourceTree = "<group>"; };
 		C384D377179E084F006E4875 /* Quick_Start_TutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quick_Start_TutorialTests.m; sourceTree = "<group>"; };
+		C384D381179E08EB006E4875 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C384D383179E08F1006E4875 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C384D384179E08F1006E4875 /* AddressBookUI.framework in Frameworks */,
+				C384D382179E08EB006E4875 /* AddressBook.framework in Frameworks */,
 				C384D344179E084F006E4875 /* UIKit.framework in Frameworks */,
 				C384D346179E084F006E4875 /* Foundation.framework in Frameworks */,
 				C384D348179E084F006E4875 /* CoreGraphics.framework in Frameworks */,
@@ -89,6 +95,8 @@
 		C384D337179E084E006E4875 = {
 			isa = PBXGroup;
 			children = (
+				C384D383179E08F1006E4875 /* AddressBookUI.framework */,
+				C384D381179E08EB006E4875 /* AddressBook.framework */,
 				C384D349179E084F006E4875 /* Quick Start Tutorial */,
 				C384D370179E084F006E4875 /* Quick Start TutorialTests */,
 				C384D342179E084F006E4875 /* Frameworks */,
@@ -399,6 +407,7 @@
 				GCC_PREFIX_HEADER = "Quick Start Tutorial/Quick Start Tutorial-Prefix.pch";
 				INFOPLIST_FILE = "Quick Start Tutorial/Quick Start Tutorial-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -410,6 +419,7 @@
 				GCC_PREFIX_HEADER = "Quick Start Tutorial/Quick Start Tutorial-Prefix.pch";
 				INFOPLIST_FILE = "Quick Start Tutorial/Quick Start Tutorial-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
